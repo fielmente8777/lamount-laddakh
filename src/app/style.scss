@@ -110,3 +110,15 @@
 .box-shadow {
   box-shadow: 0px 7px 29px rgba(100, 100, 111, 0.2);
 }
+
+
+/* Apply blur to non-active slides */
+.swiper-slide-custom:not(.swiper-slide-active) img {
+  filter: blur(2px) brightness(100%);
+  transition: filter 0.3s ease;
+}
+
+/* Remove blur from active slide */
+.swiper-slide-custom .swiper-slide-active img {
+  filter: none;
+}

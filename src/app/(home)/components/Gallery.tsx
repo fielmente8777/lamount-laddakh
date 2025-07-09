@@ -11,7 +11,7 @@ const Gallery: React.FC<GalleryType> = ({ title, subTitle, images, links }) => {
     <SectionWithContainer>
       <div className="w-full space-y-14">
         <SectionHeadingDesc title={title} subTitle={subTitle} textcenter />
-        <div className="w-full">
+        <div className="w-full swiper-slide-custom">
           <SwiperCarousel
             data={images}
             modules={[EffectCoverflow, Navigation]}
@@ -47,7 +47,7 @@ const Gallery: React.FC<GalleryType> = ({ title, subTitle, images, links }) => {
               },
             }}
             renderSlide={(src, index) => (
-              <div className="relative aspect-[4/2.5] md:aspect-[4/2.8] rounded w-full overflow-hidden">
+              <div className="relative aspect-[4/2.5] md:aspect-[4/2.8] rounded w-full overflow-hidden ">
                 <Image
                   src={src}
                   alt={`Slide ${index ? index + 1 : ""}`}
@@ -68,7 +68,7 @@ const Gallery: React.FC<GalleryType> = ({ title, subTitle, images, links }) => {
             </button>
           </div>
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center -mt-6">
           {links.map((link, index) => (
            <LinkButton key={index} {...link} className="bg-dark text-white hover:text-dark hover:bg-white" />
           ))}

@@ -20,7 +20,7 @@ const Navbar = () => {
           <div className="">
             <Link
               href="tel:+91 96222 05133"
-              className="text-white font-semibold text-lg flex items-center gap-2"
+              className="text-white text-lg flex items-center gap-2"
             >
               <span className="md:block hidden">
                 <OutLinePhoneIcon />

@@ -19,11 +19,11 @@ const Banner: React.FC<BannerType> = ({ title, subTitle, src }) => {
         />
         <div className="absolute inset-0 z-20 flex flex-col max-md:px-5 bg-black/50">
           <Navbar />
-          <div className="w-full text-center flex flex-col space-y-4 mt-auto mb-36">
+          <div className="w-full text-center flex flex-col space-y-4 mt-auto md:mb-36 mb-16">
             <p className="text-white text-lg lato">{title}</p>
             <Headings
               level={1}
-              className="text-white text-[2rem]/[2.5rem] md:text-[3.5rem]/[4rem] tracking-wide font-semibold playfair-display"
+              className="text-white text-[2rem]/[2.5rem] md:text-[3.5rem]/[4rem] tracking-wide playfair-display"
             >
               {subTitle}
             </Headings>
