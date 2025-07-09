@@ -4,6 +4,7 @@ import "./globals.css";
 import "./style.scss";
 import { DataProvider } from "@/ContextApi/DataContext";
 import { Footer } from "@/components";
+import RenderChatBot from "@/components/chatbot/RenderChatBot";
 
 const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <DataProvider>
+          <RenderChatBot />
           {children}
           <Footer />
         </DataProvider>
