@@ -10,27 +10,28 @@ export const NavData = {
 
 export const pageDate = {
   bannerdata: {
-    title: "WHERE AFFORDABILITY MEETS AUTHENTICITY",
+    title: "UNFORGETTABLE LADAKH, CRAFTED FOR EVERY BUDGET",
     subTitle: ["Affordable Luxury in the Heart of Ladakh"],
     src: imgUrl + "bnr.webp",
   },
   aboutUs: {
     title: "WELCOME TO LA MOUNT LADAKH",
-    subTitle: "Ladakh’s Beauty, Right Outside Your Window",
+    subTitle: "Discover Ladakh, Wrapped in Comfort",
     description: [
-      "Located in the heart of Leh, Hotel La Mount Ladakh offers the perfect base to explore the beauty of Ladakh. With comfortable accommodations for families, adventurers, and honeymooners, we combine warm hospitality with breathtaking views and easy access to key attractions. Experience Ladakh like never before with us!",
+      "Nestled in the vibrant heart of Leh, Hotel La Mount Ladakh is your sanctuary amidst the awe-inspiring Himalayas. More than a hotel, we’re your home for adventure, romance, and family memories, offering a front-row seat to Ladakh’s rugged landscapes, lively markets, and sacred monasteries. Our heartfelt hospitality wraps you in comfort, while our prime location opens the door to adventure. From breathtaking views to personalized care, La Mount is where your Ladakh journey unfolds with warmth and wonders.",
     ],
   },
 
   accommodations: {
     title: "EXPLORE OUR STAYS",
     subTitle: "ACCOMMODATIONS",
+    description:"At Hotel La Mount Ladakh, our rooms blend modern comfort with Ladakh’s natural charm—perfect for families, adventurers, and couples seeking a personal, luxurious escape.",
     cards: [
       {
         title: "Luxury Cordillera",
         subTitle: "LA MOUNT STAYS",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repr.",
+          "The Luxury Cordillera is a sanctuary of serenity, where a plush king bed and breathtaking mountain views create an escape like no other. With a bathroom and thoughtful touches, this room invites you to unwind in style, wrapped in the grandeur of Ladakh’s peaks.",
         images: [imgUrl + "im1.webp", imgUrl + "im2.webp", imgUrl + "im3.webp"],
         listOfServices: [
           "216 sq.ft (20 sq.mt)",
@@ -48,7 +49,7 @@ export const pageDate = {
         title: "Deluxe Cordillera",
         subTitle: "LA MOUNT STAYS",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repr.",
+          "The Deluxe Cordillera is a charming haven, offering stunning mountain and hill views paired with a cozy double bed. With a well-appointed bathroom and inviting details, it’s the perfect space to recharge after a day of exploring Ladakh’s wonders.",
         images: [imgUrl + "im1.webp", imgUrl + "im2.webp", imgUrl + "im3.webp"],
         listOfServices: [
           "224 sq.ft (21 sq.mt)",
@@ -67,7 +68,7 @@ export const pageDate = {
 
   gallery: {
     title: "EXPLORE OUR GALLERY",
-    subTitle: "Experience Hotel La Mount Through Our Lens",
+    subTitle: "A Window to La Mount’s Galley",
     images: [
       imgUrl + "im1.webp",
       imgUrl + "im2.webp",
@@ -88,7 +89,7 @@ export const pageDate = {
 
   testimonial: {
     title: "Testimonials",
-    subTitle: "Appreciation From Our Guests!",
+    subTitle: "Hearts Touched by La Mount",
     image: imgUrl + "im4.webp",
 
     cards: [
@@ -130,8 +131,8 @@ export const footerLinks = {
         },
 
         {
-          label: "Email: info@lamountladakh.in",
-          href: "mailto:info@lamountladakh.in",
+          label: "Email: lamountladakh.in",
+          href: "mailto: lamountladakh.in",
         },
       ],
     },

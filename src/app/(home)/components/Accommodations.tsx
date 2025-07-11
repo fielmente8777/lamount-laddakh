@@ -9,11 +9,13 @@ const Accommodations: React.FC<AccommodationType> = ({
   title,
   subTitle,
   cards,
+  description,
 }) => {
   return (
     <SectionWithContainer sectionClassName="bg-bg1">
       <div className="w-full space-y-14">
         <SectionHeadingDesc title={title} subTitle={subTitle} textcenter />
+        <p className="md:text-lg text-center max-w-5xl mx-auto text-[#444242]">{description}</p>
         <SwiperCarousel
           data={cards}
           slidesPerView={1}

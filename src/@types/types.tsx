@@ -14,6 +14,7 @@ export interface AboutType {
 export interface AccommodationType {
   title: string;
   subTitle: string;
+  description: string;
   cards: {
     title: string;
     subTitle: string;
