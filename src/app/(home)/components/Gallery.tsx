@@ -4,9 +4,20 @@ import { LinkButton, SectionWithContainer, SwiperCarousel } from "@/components";
 import { SectionHeadingDesc } from "@/components/typography";
 import { NextButton, PrevButton } from "@/Icons/icon";
 import Image from "next/image";
+// import { useEffect } from "react";
 import { EffectCoverflow, Navigation } from "swiper/modules";
 
 const Gallery: React.FC<GalleryType> = ({ title, subTitle, images, links }) => {
+  // useEffect(() => {
+  //   // class- 'swiper-slide-fully-visible swiper-slide-active'
+  //   document
+  //     .querySelectorAll<HTMLDivElement>(
+  //       ".swiper-slide-fully-visible.swiper-slide-active"
+  //     )
+  //     ?.forEach((slide) => {
+  //       (slide as HTMLDivElement).style.width = "1900px"; // Modify as needed
+  //     });
+  // }, []);
   return (
     <SectionWithContainer>
       <div className="w-full space-y-14">
@@ -31,6 +42,7 @@ const Gallery: React.FC<GalleryType> = ({ title, subTitle, images, links }) => {
               modifier: 2, // Makes the central slide more prominent
               slideShadows: true, // Shadow adds blur illusion
             }}
+            
             speed={800}
             breakpoints={{
               640: {
@@ -42,12 +54,12 @@ const Gallery: React.FC<GalleryType> = ({ title, subTitle, images, links }) => {
                 spaceBetween: 20,
               },
               1024: {
-                slidesPerView: 2.5,
+                slidesPerView: 2.8,
                 spaceBetween: 30,
               },
             }}
             renderSlide={(src, index) => (
-              <div className="relative aspect-[4/2.5] md:aspect-[4/2.8] rounded w-full overflow-hidden ">
+              <div className="relative aspect-[4/2.5] md:aspect-[4/3] rounded w-full overflow-hidden ">
                 <Image
                   src={src}
                   alt={`Slide ${index ? index + 1 : ""}`}
@@ -70,7 +82,11 @@ const Gallery: React.FC<GalleryType> = ({ title, subTitle, images, links }) => {
         </div>
         <div className="flex items-center justify-center -mt-6">
           {links.map((link, index) => (
-           <LinkButton key={index} {...link} className="bg-dark text-white hover:text-dark hover:bg-white" />
+            <LinkButton
+              key={index}
+              {...link}
+              className="bg-dark text-white hover:text-dark hover:bg-white"
+            />
           ))}
         </div>
       </div>

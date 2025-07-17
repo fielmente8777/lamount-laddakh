@@ -32,7 +32,20 @@ export const pageDate = {
         subTitle: "LA MOUNT STAYS",
         description:
           "The Luxury Cordillera is a sanctuary of serenity, where a plush king bed and breathtaking mountain views create an escape like no other. With a bathroom and thoughtful touches, this room invites you to unwind in style, wrapped in the grandeur of Ladakh’s peaks.",
-        images: [imgUrl + "im1.webp", imgUrl + "im2.webp", imgUrl + "im3.webp"],
+        images: [
+          "/luxurycordillera/IMG_12.webp",
+          "/luxurycordillera/IMG_1.webp",
+          "/luxurycordillera/IMG_5.webp",
+          "/luxurycordillera/IMG_6.webp",
+          "/luxurycordillera/IMG_7.webp",
+          "/luxurycordillera/IMG_4.webp",
+          "/luxurycordillera/IMG_3.webp",
+          "/luxurycordillera/IMG_9.webp",
+          "/luxurycordillera/IMG_10.webp",
+          // "/luxurycordillera/IMG_11.webp",
+          "/luxurycordillera/IMG_2.webp",
+          // "/luxurycordillera/IMG_8.webp",
+        ],
         listOfServices: [
           "216 sq.ft (20 sq.mt)",
           "Comfortable & Spacious King Bed",
@@ -50,9 +63,45 @@ export const pageDate = {
         subTitle: "LA MOUNT STAYS",
         description:
           "The Deluxe Cordillera is a charming haven, offering stunning mountain and hill views paired with a cozy double bed. With a well-appointed bathroom and inviting details, it’s the perfect space to recharge after a day of exploring Ladakh’s wonders.",
-        images: [imgUrl + "im1.webp", imgUrl + "im2.webp", imgUrl + "im3.webp"],
+        images: [
+          "/deluxecordillera/IMG_1.webp",
+          "/deluxecordillera/IMG_2.webp",
+          "/deluxecordillera/IMG_6.webp",
+          // "/deluxecordillera/IMG_3.webp",
+          "/deluxecordillera/IMG_4.webp",
+          "/deluxecordillera/IMG_5.webp",
+        ],
         listOfServices: [
           "224 sq.ft (21 sq.mt)",
+          "Comfortable & Spacious King Bed",
+          "Mountain View",
+        ],
+        links: [
+          {
+            label: "GET EXCLUSIVE OFFERS!",
+            href: "#",
+          },
+        ],
+      },
+      {
+        title: "Standard Cordillera",
+        subTitle: "LA MOUNT STAYS",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.",
+        images: [
+          "/standardcordillera/IMG_12.webp",
+          "/standardcordillera/IMG_4.webp",
+          "/standardcordillera/IMG_5.webp",
+          "/standardcordillera/IMG_6.webp",
+          "/standardcordillera/IMG_7.webp",
+          "/standardcordillera/IMG_1.webp",
+          "/standardcordillera/IMG_2.webp",
+          "/standardcordillera/IMG_8.webp",
+          "/standardcordillera/IMG_9.webp",
+          "/standardcordillera/IMG_10.webp",
+        ],
+        listOfServices: [
+          "000 sq.ft (00 sq.mt)",
           "Comfortable & Spacious King Bed",
           "Mountain View",
         ],
@@ -78,6 +127,19 @@ export const pageDate = {
       imgUrl + "im2.webp",
       imgUrl + "im3.webp",
       imgUrl + "im4.webp",
+      "/gallery/IMG_1.webp",
+      "/gallery/IMG_2.webp",
+      "/gallery/IMG_3.webp",
+      "/gallery/IMG_4.webp",
+      "/gallery/IMG_5.webp",
+      "/gallery/IMG_6.webp",
+      "/gallery/IMG_7.webp",
+      "/gallery/IMG_8.webp",
+      "/gallery/IMG_9.webp",
+      "/gallery/IMG_10.webp",
+      "/gallery/IMG_11.webp",
+      "/gallery/IMG_12.webp",
+      "/gallery/IMG_13.webp",
     ],
     links: [
       {

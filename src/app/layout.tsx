@@ -5,6 +5,8 @@ import "./style.scss";
 import { DataProvider } from "@/ContextApi/DataContext";
 import { Footer } from "@/components";
 import RenderChatBot from "@/components/chatbot/RenderChatBot";
+import Call from "@/components/ContactButton/Call";
+import Whatsapp from "@/components/ContactButton/WhatsApp";
 
 const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
@@ -37,6 +39,8 @@ export default function RootLayout({
           <RenderChatBot />
           {children}
           <Footer />
+          <Call callNumber="+919622205133" />
+          <Whatsapp whatsAppNumber="+919622205133"/>
         </DataProvider>
       </body>
     </html>
