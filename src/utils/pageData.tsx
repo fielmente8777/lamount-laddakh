@@ -54,7 +54,7 @@ export const pageDate = {
         links: [
           {
             label: "GET EXCLUSIVE OFFERS!",
-            href: "#",
+            href: "tel:+91 96222 05133",
           },
         ],
       },
@@ -79,7 +79,7 @@ export const pageDate = {
         links: [
           {
             label: "GET EXCLUSIVE OFFERS!",
-            href: "#",
+            href: "tel:+91 96222 05133",
           },
         ],
       },
@@ -108,7 +108,7 @@ export const pageDate = {
         links: [
           {
             label: "GET EXCLUSIVE OFFERS!",
-            href: "#",
+            href: "tel:+91 96222 05133",
           },
         ],
       },
@@ -144,7 +144,7 @@ export const pageDate = {
     links: [
       {
         label: "GET EXCLUSIVE OFFERS!",
-        href: "#",
+        href: "tel:+91 96222 05133",
       },
     ],
   },
