@@ -33,14 +33,14 @@ export const pageDate = {
         description:
           "The Luxury Cordillera is a sanctuary of serenity, where a plush king bed and breathtaking mountain views create an escape like no other. With a bathroom and thoughtful touches, this room invites you to unwind in style, wrapped in the grandeur of Ladakh’s peaks.",
         images: [
-          "/luxurycordillera/IMG_12.webp",
+          "/luxurycordillera/IMG_14.webp",
           "/luxurycordillera/IMG_1.webp",
           "/luxurycordillera/IMG_5.webp",
           "/luxurycordillera/IMG_6.webp",
           "/luxurycordillera/IMG_7.webp",
           "/luxurycordillera/IMG_4.webp",
           "/luxurycordillera/IMG_3.webp",
-          "/luxurycordillera/IMG_9.webp",
+          "/luxurycordillera/IMG_13.webp",
           "/luxurycordillera/IMG_10.webp",
           // "/luxurycordillera/IMG_11.webp",
           "/luxurycordillera/IMG_2.webp",
@@ -87,7 +87,7 @@ export const pageDate = {
         title: "Standard Cordillera",
         subTitle: "LA MOUNT STAYS",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.",
+          "Experience Comfort and Convenience Discover the perfect blend of comfort and value in our Standard Rooms, thoughtfully designed for travelers seeking relaxing accommodations with essential amenities. Our Standard Rooms offer easy access and a hassle-free stay.",
         images: [
           "/Standard/IMG_12.webp",
           "/Standard/IMG_4.webp",
@@ -101,9 +101,9 @@ export const pageDate = {
           "/Standard/IMG_10.webp",
         ],
         listOfServices: [
-          "000 sq.ft (00 sq.mt)",
-          "Comfortable & Spacious King Bed",
-          "Mountain View",
+          "Private bathroom",
+          "Comfortable & Spacious Bed",
+          "Free Wifi",
         ],
         links: [
           {
