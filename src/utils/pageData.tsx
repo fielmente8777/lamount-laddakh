@@ -54,7 +54,7 @@ export const pageDate = {
         links: [
           {
             label: "GET EXCLUSIVE OFFERS!",
-            href: "tel:+91 96222 05133",
+            href: "https://wa.me/+919622205133?text=Hello",
           },
         ],
       },
@@ -79,7 +79,7 @@ export const pageDate = {
         links: [
           {
             label: "GET EXCLUSIVE OFFERS!",
-            href: "tel:+91 96222 05133",
+            href: "https://wa.me/+919622205133?text=Hello",
           },
         ],
       },
@@ -108,7 +108,7 @@ export const pageDate = {
         links: [
           {
             label: "GET EXCLUSIVE OFFERS!",
-            href: "tel:+91 96222 05133",
+            href: "https://wa.me/+919622205133?text=Hello",
           },
         ],
       },
@@ -144,7 +144,7 @@ export const pageDate = {
     links: [
       {
         label: "GET EXCLUSIVE OFFERS!",
-        href: "tel:+91 96222 05133",
+        href: "https://wa.me/+919622205133?text=Hello",
       },
     ],
   },

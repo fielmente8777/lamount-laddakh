@@ -65,6 +65,7 @@ const RoomsCard: React.FC<AccommodationType["cards"][0]> = ({
         <Link
           href={links[0].href}
           // onClick={() => setOpen(true)}
+          target="_blank"
           className="px-4 py-3 bg-dark w-fit text-white flex items-center justify-center gap-2 hover:bg-white hover:text-dark border border-dark transition-all duration-300 ease-in-out hover:scale-x-105 active:scale-95 hover:shadow-lg"
         >
           {links[0].label}

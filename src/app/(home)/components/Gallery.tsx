@@ -81,13 +81,14 @@ const Gallery: React.FC<GalleryType> = ({ title, subTitle, images, links }) => {
           </div>
         </div>
         <div className="flex items-center justify-center -mt-6">
-          {links.map((link, index) => (
+            {links.map((link, index) => (
             <LinkButton
               key={index}
               {...link}
+              target="_blank"
               className="bg-dark text-white hover:text-dark hover:bg-white"
             />
-          ))}
+            ))}
         </div>
       </div>
     </SectionWithContainer>
