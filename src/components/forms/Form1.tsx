@@ -159,7 +159,7 @@ const Form1: React.FC<formProps> = ({
       const { data } = await axios.post(
         "https://nexon.eazotel.com/eazotel/addcontacts",
         {
-          Domain: "abhijeet",
+          Domain: "lamountladakh",
           email: formData?.EmailId,
           Name: formData?.fullName,
           Contact: formData?.PhoneNumber,

@@ -193,8 +193,8 @@ export const footerLinks = {
         },
 
         {
-          label: "Email: lamountladakh.in",
-          href: "mailto: lamountladakh.in",
+          label: "Email: info@lamountladakh.in",
+          href: "mailto: info@lamountladakh.in",
         },
       ],
     },
