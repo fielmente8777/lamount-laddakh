@@ -52,7 +52,7 @@ const ChatbotWidget = ({
   useEffect(() => {
     const interval = setTimeout(() => {
       setIsOpen(true);
-    }, openInterval || 15000);
+    }, openInterval || 40000);
 
     return () => clearInterval(interval);
   }, [openInterval]);
