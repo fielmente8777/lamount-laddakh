@@ -3,8 +3,8 @@ import { imgUrl } from "./links";
 export const NavData = {
   logo: imgUrl + "logo.webp",
   link: {
-    name: "+91 96222 05133 ",
-    href: "tel:+91 96222 05133",
+    name: "+91 85807 60165 ",
+    href: "tel:+91 85807 60165",
   },
 };
 
@@ -186,8 +186,8 @@ export const footerLinks = {
           href: "",
         },
         {
-          label: "Call: +91 96222 05133",
-          href: "tel:+91 96222 05133",
+          label: "Call: +91 85807 60165",
+          href: "tel:+91 85807 60165",
           label2: "01982257868",
           href2: "tel:01982257868",
         },
