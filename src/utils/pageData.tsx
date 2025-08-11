@@ -188,8 +188,8 @@ export const footerLinks = {
         {
           label: "Call: +91 85807 60165",
           href: "tel:+91 85807 60165",
-          label2: "01982257868",
-          href2: "tel:01982257868",
+          label2: "+91 96222 05133",
+          href2: "tel:+91 9622205133",
         },
 
         {
