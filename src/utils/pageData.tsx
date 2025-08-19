@@ -25,7 +25,8 @@ export const pageDate = {
   accommodations: {
     title: "EXPLORE OUR STAYS",
     subTitle: "ACCOMMODATIONS",
-    description:"At Hotel La Mount Ladakh, our rooms blend modern comfort with Ladakh’s natural charm—perfect for families, adventurers, and couples seeking a personal, luxurious escape.",
+    description:
+      "At Hotel La Mount Ladakh, our rooms blend modern comfort with Ladakh’s natural charm—perfect for families, adventurers, and couples seeking a personal, luxurious escape.",
     cards: [
       {
         title: "Luxury Cordillera",
@@ -186,10 +187,10 @@ export const footerLinks = {
           href: "",
         },
         {
-          label: "Call: +91 85807 60165",
-          href: "tel:+91 85807 60165",
-          label2: "+91 96222 05133",
-          href2: "tel:+91 9622205133",
+          label: "Call: +91 96222 05133",
+          href: "tel:+91 9622205133",
+          label2: "+91 85807 60165",
+          href2: "tel:+91 85807 60165",
         },
 
         {

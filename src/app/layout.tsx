@@ -67,7 +67,7 @@ export default function RootLayout({
           {children}
           <Footer />
           <Call callNumber="+91 85807 60165" />
-          <Whatsapp whatsAppNumber="+918580760165" />
+          <Whatsapp whatsAppNumber="+919622205133" />
         </DataProvider>
       </body>
     </html>
