@@ -36,8 +36,12 @@ const Form1: React.FC<formProps> = ({
     EmailId: "",
   });
 
-  const [startDate, setStartDate] = useState<Date | null>(null);
-  const [endDate, setEndDate] = useState<Date | null>(null);
+   const [dateRange, setDateRange] = useState<[Date | null, Date | null]>([
+    null,
+    null,
+  ]);
+
+  const [startDate, endDate] = dateRange;
 
   const [error, setError] = useState({
     checkIn: "",
@@ -70,31 +74,22 @@ const Form1: React.FC<formProps> = ({
     }
   };
 
-  const handleDateChange = (
-    date: Date | null,
-    field: "checkIn" | "checkOut"
-  ) => {
-    const dateString = date ? date.toISOString().split("T")[0] : "";
+  const handleDateChange = (update: [Date | null, Date | null]) => {
+    setDateRange(update);
+
+    const [start, end] = update;
+    const checkInString = start ? start.toISOString().split("T")[0] : "";
+    const checkOutString = end ? end.toISOString().split("T")[0] : "";
 
     setFormData((prev) => ({
       ...prev,
-      [field]: dateString,
+      checkIn: checkInString,
+      checkOut: checkOutString,
     }));
 
-    if (field === "checkIn") {
-      setStartDate(date);
-      // Clear check-out error if both dates are selected
-      if (date && endDate && date > endDate) {
-        setEndDate(null);
-        setFormData((prev) => ({ ...prev, checkOut: "" }));
-      }
-    } else {
-      setEndDate(date);
-    }
-
-    // Clear error when date is selected
-    if (error[field]) {
-      setError((prev) => ({ ...prev, [field]: "" }));
+    // Clear date errors when date is selected
+    if (error.checkIn || error.checkOut) {
+      setError((prev) => ({ ...prev, checkIn: "", checkOut: "" }));
     }
   };
 
@@ -175,15 +170,21 @@ const Form1: React.FC<formProps> = ({
         }
       );
       if (data.Status) {
-        setFormData({
+       setFormData({
           checkIn: "",
           checkOut: "",
           fullName: "",
           PhoneNumber: "",
           EmailId: "",
         });
-        setStartDate(null);
-        setEndDate(null);
+        setDateRange([null, null]);
+        setError({
+          checkIn: "",
+          checkOut: "",
+          fullName: "",
+          PhoneNumber: "",
+          EmailId: "",
+        });
         setSubmitSuccess(true);
         setTimeout(() => setSubmitSuccess(false), 3000);
         if (setOpen) {
@@ -191,16 +192,7 @@ const Form1: React.FC<formProps> = ({
         }
         window.open("/thank-you", "_blank");
       } else {
-        setFormData({
-          checkIn: "",
-          checkOut: "",
-          fullName: "",
-          PhoneNumber: "",
-          EmailId: "",
-        });
-
-        setStartDate(null);
-        setEndDate(null);
+        
         alert(data.message || "Something went wrong!");
       }
     } catch (error) {
@@ -297,49 +289,31 @@ const Form1: React.FC<formProps> = ({
 
       {/* Check In Date Field - updated with icon */}
       <div
-        className={`col-span-1 flex flex-col items-center bg-[#fff] max-md:py-2 relative`}
+        className={`col-span-2 flex flex-col items-center bg-[#fff] max-md:py-2 relative`}
       >
         <DatePicker
           selected={startDate}
-          onChange={(date) => handleDateChange(date, "checkIn")}
+          onChange={handleDateChange}
           selectsStart
+          selectsRange
           startDate={startDate}
           endDate={endDate}
           minDate={new Date(min || Date.now())}
-          placeholderText="Check in"
-          className="outline-none border-none w-full h-full  py-2 ps-2  bg-transparent text-base text-[#343434] placeholder:text-[#343434]"
+          placeholderText="Check in & Check out"
+          className="outline-none border-none w-full h-full bg-transparent text-base text-[#343434] placeholder:text-[#343434]"
           wrapperClassName="w-full h-full !flex items-center"
         />
-        <div className="absolute right-1 top-1/2 transform -translate-y-1/2 pointer-events-none">
+        <div className="absolute right-2 top-[13px] transform pointer-events-none">
           <CalenderIcon className="text-secondary" />
         </div>
-        {error.checkIn && (
-          <span className="text-red-500 text-xs">{error.checkIn}</span>
+        {(error.checkIn || error.checkOut) && (
+          <span className="text-red-500 text-xs px-1 w-full">
+            {error.checkIn || error.checkOut}
+          </span>
         )}
       </div>
 
-      {/* Check Out Date Field - updated with icon */}
-      <div
-        className={`col-span-1 flex flex-col items-center bg-[#fff] max-md:py-2 relative`}
-      >
-        <DatePicker
-          selected={endDate}
-          onChange={(date) => handleDateChange(date, "checkOut")}
-          selectsEnd
-          startDate={startDate}
-          endDate={endDate}
-          minDate={startDate || new Date(min || Date.now())}
-          placeholderText="Check out"
-          className="outline-none border-none w-full h-full py-2 ps-2 bg-transparent text-base text-[#343434] placeholder:text-[#343434]"
-          wrapperClassName="w-full h-full !flex items-center"
-        />
-        <div className="absolute right-1 top-1/2 transform -translate-y-1/2 pointer-events-none">
-          <CalenderIcon className="text-secondary" />
-        </div>
-        {error.checkOut && (
-          <span className="text-red-500 text-xs ">{error.checkOut}</span>
-        )}
-      </div>
+      
 
       {/* Submit Button - unchanged */}
       <div
