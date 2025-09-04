@@ -69,6 +69,13 @@ export default function RootLayout({
           <Call callNumber="+91 85807 60165" />
           <Whatsapp whatsAppNumber="+919622205133" />
         </DataProvider>
+        {/* <Script id="eazbot-script" strategy="afterInteractive">
+          {`window.eazbotConfig = {
+              ndid: "099d6e36-2438-4f10-8427-b9fe86741bf7",
+              hid: "64672585",
+            };`}
+        </Script>
+        <Script src="https://cb-script.dyq28lyxrazm2.amplifyapp.com/widget/lead-chatbot.js"></Script> */}
       </body>
     </html>
   );
