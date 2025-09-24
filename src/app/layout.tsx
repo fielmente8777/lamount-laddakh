@@ -1,13 +1,12 @@
-import type { Metadata } from "next";
-import { Playfair_Display, Lato } from "next/font/google";
-import "./globals.css";
-import "./style.scss";
-import { DataProvider } from "@/ContextApi/DataContext";
 import { Footer } from "@/components";
-import RenderChatBot from "@/components/chatbot/RenderChatBot";
 import Call from "@/components/ContactButton/Call";
 import Whatsapp from "@/components/ContactButton/WhatsApp";
+import { DataProvider } from "@/ContextApi/DataContext";
+import type { Metadata } from "next";
+import { Lato, Playfair_Display } from "next/font/google";
 import Script from "next/script";
+import "./globals.css";
+import "./style.scss";
 
 const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
@@ -23,6 +22,36 @@ const lato = Lato({
 export const metadata: Metadata = {
   title: "Hotel La Mount Ladakh",
   description: "Affordable Luxury in the Heart of Ladakh",
+  keywords: [
+    "Hotel La Mount Ladakh",
+    "Ladakh",
+    "Luxury",
+    "Affordable",
+    "hotel in ladakh",
+    "luxury hotel in ladakh",
+    "affordable hotel in ladakh",
+  ],
+  alternates: {
+    canonical: "https://lamountladakh.com/",
+    languages: {
+      "en-US": "https://lamountladakh.com/",
+    },
+  },
+  openGraph: {
+    title: "Hotel La Mount Ladakh",
+    description: "Affordable Luxury in the Heart of Ladakh",
+    url: "https://lamountladakh.com/",
+    siteName: "Hotel La Mount Ladakh",
+    images: [
+      {
+        url: "https://lamountladakh.com/ogimage.png",
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "en-US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -63,19 +92,18 @@ export default function RootLayout({
 
         {/* <!-- End Google Tag Manager (noscript) --> */}
         <DataProvider>
-          <RenderChatBot />
           {children}
           <Footer />
           <Call callNumber="+91 85807 60165" />
           <Whatsapp whatsAppNumber="+919622205133" />
         </DataProvider>
-        {/* <Script id="eazbot-script" strategy="afterInteractive">
+        <Script id="eazbot-script" strategy="afterInteractive">
           {`window.eazbotConfig = {
               ndid: "099d6e36-2438-4f10-8427-b9fe86741bf7",
               hid: "64672585",
             };`}
         </Script>
-        <Script src="https://cb-script.dyq28lyxrazm2.amplifyapp.com/widget/lead-chatbot.js"></Script> */}
+        <Script src="https://cb-script.dyq28lyxrazm2.amplifyapp.com/widget/lead-chatbot.js"></Script>
       </body>
     </html>
   );

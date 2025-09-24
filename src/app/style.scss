@@ -122,3 +122,13 @@
 .swiper-slide-custom .swiper-slide-active img {
   filter: none;
 }
+
+
+.demo {
+  .swiper {
+    pointer-events: none;
+  }
+  .swiper-wrapper {
+    transition-timing-function: linear !important;
+  }
+}
