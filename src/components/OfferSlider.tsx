@@ -4,7 +4,7 @@ import SwiperCarousel from "./SwiperCarousel";
 import { Section } from "./sectionComponent";
 
 const OfferSlider = () => {
-  const offersTitle = ["LIMITED TIME OFFER: UP TO 10% OFF – ENDS THIS SEPTEMBER!"];
+  const offersTitle = ["LIMITED TIME OFFER: UP TO 10% OFF – ENDS THIS OCTOBER!"];
 
   const data = offersTitle.length > 5 ? offersTitle : [...offersTitle, ...offersTitle, ...offersTitle];
   return (
